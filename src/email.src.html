@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+<!-- The design is light-only. Declaring "light" stops Apple Mail from auto-darkening it.
+     Gmail/Outlook apps still force their own dark mode; see the logo note in the header. -->
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>Get the most from Rate Connect</title>
+
+<!--[if mso]>
+<noscript>
+<xml>
+  <o:OfficeDocumentSettings>
+    <o:AllowPNG/>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+  </o:OfficeDocumentSettings>
+</xml>
+</noscript>
+<style>
+  /* Outlook (Word engine) does not understand the system-font stack and would fall
+     back to Times New Roman. Force the closest Windows equivalent instead. */
+  table, td, th, p, a, span, div, h1, h2 { font-family: 'Segoe UI', Arial, sans-serif !important; }
+  /* Word adds space around tables and stretches line boxes; lock both down. */
+  table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  td, p, a, span { mso-line-height-rule: exactly; }
+</style>
+<![endif]-->
+
+<style>
+  /* ---------- Resets ---------- */
+  html, body { margin: 0 !important; padding: 0 !important; width: 100% !important; }
+  * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
+  table, td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; display: block; }
+  a { text-decoration: none; }
+
+  /* iOS turns addresses/dates into blue links — keep them in the surrounding colour. */
+  a[x-apple-data-detectors] { color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; }
+  /* Gmail: stop it recolouring links it generates itself (e.g. the footer address). */
+  u + .body a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; }
+  /* Samsung Mail equivalent */
+  #MessageViewBody a { color: inherit; text-decoration: none; font-size: inherit; font-family: inherit; font-weight: inherit; line-height: inherit; }
+
+  /* ---------- Mobile (Figma "Mobile" frame, 300px design) ----------
+     Everything below is a progressive enhancement. Clients without media-query
+     support (e.g. Gmail app with a non-Google account) get the fluid desktop
+     layout, which still fits because every column is percentage/max-width based. */
+  @media screen and (max-width: 600px) {
+    .px      { padding-left: 20px !important; padding-right: 20px !important; }
+    .hero    { padding-top: 32px !important; padding-bottom: 32px !important; }
+    .hero-h1 { font-size: 20px !important; line-height: 24px !important; }
+    .tips    { padding-top: 20px !important; padding-bottom: 20px !important; }
+
+    /* Tip rows: number sits above the text instead of beside it */
+    .tip-num, .tip-text { display: block !important; width: 100% !important; }
+    .tip-gap  { display: none !important; }
+    .tip-text { padding-top: 16px !important; }
+
+    /* Multi-property banner: stack and centre */
+    .banner        { text-align: center !important; padding-top: 20px !important; padding-bottom: 20px !important; }
+    .banner-col    { display: block !important; max-width: 100% !important; width: 100% !important; text-align: center !important; }
+    .banner-text   { padding-right: 0 !important; }
+    .banner-btn    { padding: 16px 0 0 0 !important; }
+    .banner-btn table { margin: 0 auto !important; }
+
+    /* Support signature */
+    .sig        { padding: 24px !important; }
+    .sig-table  { width: 100% !important; }
+    .sig-avatar img { width: 60px !important; height: 60px !important; }
+    .sig-links  { padding-left: 0 !important; }
+    /* Figma mobile: the two links sit side by side, each label wrapping inside its half */
+    .sig-link-item { width: 50% !important; box-sizing: border-box; padding-right: 12px !important; }
+    .sig-link-text { white-space: normal !important; }
+
+    .sig-avatar { width: 60px !important; }
+    .footer   { padding-left: 40px !important; padding-right: 40px !important; }
+  }
+</style>
+</head>
+
+<body id="body" class="body" style="margin:0; padding:0; background-color:#f5f5f5; word-spacing:normal;">
+{{AMPSCRIPT_SETUP}}
+<!-- Preheader: the grey preview line in the inbox list. Hidden in the body.
+     The trailing &zwnj;&nbsp; run stops clients pulling body copy into the preview. -->
+<div style="display:none; font-size:1px; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden; mso-hide:all;">
+  Your campaign is live. Here is how to set yourself up for success.
+  &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847; &#8199;&#65279;&#847;
+</div>
+
+<div role="article" aria-roledescription="email" aria-label="Get the most from Rate Connect" lang="en" style="background-color:#f5f5f5;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f5f5f5;">
+<tr>
+<td align="center" style="padding:0;">
+
+  <!-- Outlook desktop ignores max-width, so it gets a fixed 700px "ghost" table.
+       Everyone else gets a fluid table capped at 700px. -->
+  <!--[if mso]><table role="presentation" width="700" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td><![endif]-->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:700px; margin:0 auto;">
+
+    <!-- ============ HEADER (Figma: Header/RateConnect) ============ -->
+    <tr>
+      <td align="center" style="background-color:#ffffff; padding:21px 20px 21px 20px;">
+        <a href="{{URL_STUDIO}}" target="_blank" style="display:inline-block;">
+          <!-- Logo PNG carries a faint white outline: invisible on white, but keeps the
+               black "Rate Connect" wordmark readable when Gmail/Outlook apps invert the
+               background in dark mode (they never invert images). -->
+          <img src="{{IMG}}logo-rate-connect.png" width="258" height="29" alt="trivago Rate Connect" style="display:block; width:258px; max-width:100%; height:auto; border:0; color:#000000; font-family:{{FONT}}; font-size:16px; font-weight:bold;">
+        </a>
+      </td>
+    </tr>
+
+    <!-- ============ HERO (Figma: Hero/LightBlue) ============ -->
+    <tr>
+      <td class="px hero" style="background-color:#e5f5ff; padding:44px 40px 44px 40px;">
+        <h1 class="hero-h1" style="margin:0; font-family:{{FONT}}; font-size:28px; line-height:33px; font-weight:bold; color:#000000; mso-line-height-rule:exactly;">Get the most from Rate&nbsp;Connect</h1>
+        <!-- Figma uses black at 70% opacity. rgba() text is unreliable (Outlook), so this is
+             the same colour pre-blended onto #e5f5ff. -->
+        <p style="margin:8px 0 0 0; font-family:{{FONT}}; font-size:16px; line-height:19px; color:#454a4d; mso-line-height-rule:exactly;">Your campaign is live. Here is how to set yourself up for success.</p>
+      </td>
+    </tr>
+
+    <!-- ============ INTRO (Figma: Block/BodyText) ============ -->
+    <tr>
+      <td class="px" style="background-color:#ffffff; padding:32px 40px 32px 40px; font-family:{{FONT}}; color:#000000;">
+        <p style="margin:0; font-size:14px; line-height:20px; mso-line-height-rule:exactly;">Hello {{HOTELIER_NAME}},</p>
+        <p style="margin:16px 0 0 0; font-size:14px; line-height:22px; mso-line-height-rule:exactly;">Now that {{INTRO_SUBJECT}} live on trivago, here are a few things to do now and keep in mind as your campaign grows.</p>
+      </td>
+    </tr>
+
+    <!-- ============ NUMBERED TIPS (Figma: Block/NumberedTips) ============ -->
+    <tr>
+      <td class="px tips" style="background-color:#fafafa; padding:32px 40px 32px 40px;">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+
+          <!-- Tip 1 -->
+          <tr>
+            <td style="padding:0 0 20px 0;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="tip-num" width="32" valign="top" style="width:32px;">
+{{NUM_1}}
+                  </td>
+                  <td class="tip-gap" width="16" style="width:16px; font-size:0; line-height:0;">&nbsp;</td>
+                  <td class="tip-text" valign="top" style="font-family:{{FONT}};">
+                    <p style="margin:0; font-size:15px; line-height:22px; font-weight:bold; color:#000000; mso-line-height-rule:exactly;">Make your profile stand out:</p>
+                    <p style="margin:4px 0 0 0; font-size:14px; line-height:20px; color:#4d4d4d; mso-line-height-rule:exactly;">List all your amenities, upload at least 30 high-quality photos, and add descriptions in the languages of your target markets. A complete profile attracts more travellers.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Tip 2 — divider is a border-top (more reliable than a 1px-high row in Outlook) -->
+          <tr>
+            <td style="padding:20px 0 20px 0; border-top:1px solid #e8e8e8;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="tip-num" width="32" valign="top" style="width:32px;">
+{{NUM_2}}
+                  </td>
+                  <td class="tip-gap" width="16" style="width:16px; font-size:0; line-height:0;">&nbsp;</td>
+                  <td class="tip-text" valign="top" style="font-family:{{FONT}};">
+                    <p style="margin:0; font-size:15px; line-height:22px; font-weight:bold; color:#000000; mso-line-height-rule:exactly;">Keep an eye on your commission {{RATE_WORD}}:</p>
+{{RATE_BLOCK}}
+                    <p style="margin:20px 0 0 0; font-size:14px; line-height:20px; color:#4d4d4d; mso-line-height-rule:exactly;">Your commission rate influences how visible your property is on trivago. You can adjust it any time in Business Studio to improve your results.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Tip 3 -->
+          <tr>
+            <td style="padding:20px 0 0 0; border-top:1px solid #e8e8e8;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td class="tip-num" width="32" valign="top" style="width:32px;">
+{{NUM_3}}
+                  </td>
+                  <td class="tip-gap" width="16" style="width:16px; font-size:0; line-height:0;">&nbsp;</td>
+                  <td class="tip-text" valign="top" style="font-family:{{FONT}};">
+                    <p style="margin:0; font-size:15px; line-height:22px; font-weight:bold; color:#000000; mso-line-height-rule:exactly;">Watch your rate unavailability:</p>
+                    <p style="margin:4px 0 0 0; font-size:14px; line-height:20px; color:#4d4d4d; mso-line-height-rule:exactly;">This shows how consistently trivago is receiving your website rates. The lower it is, the better your visibility. You will start seeing this data as your campaign runs.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+    <!-- ============ PRIMARY CTA (Figma: Block/PrimaryCTA) ============ -->
+    <tr>
+      <td class="px" align="center" style="background-color:#fafafa; padding:24px 40px 24px 40px;">
+{{BUTTON_PRIMARY}}
+      </td>
+    </tr>
+
+{{IF_SINGLE_START}}
+    <!-- ============ MULTI-PROPERTY BANNER (Figma: Banner/MultiProperty) ============
+         "Hybrid" columns: two inline-blocks that sit side by side when there is room
+         and wrap onto two lines when there is not, even without media queries.
+         Outlook gets an equivalent two-cell ghost table. -->
+    <tr>
+      <td class="px banner" style="background-color:#e5f5ff; padding:20px 40px 20px 40px; font-size:0; text-align:left;">
+        <!--[if mso]><table role="presentation" width="620" cellpadding="0" cellspacing="0" border="0"><tr><td width="484" valign="middle"><![endif]-->
+        <div class="banner-col" style="display:inline-block; width:100%; max-width:484px; vertical-align:middle; text-align:left; font-family:{{FONT}};">
+          <div class="banner-text" style="padding-right:16px;">
+          <p style="margin:0; font-size:15px; line-height:22px; font-weight:bold; color:#000000; mso-line-height-rule:exactly;">Got more than one property?</p>
+          <p style="margin:4px 0 0 0; font-size:13px; line-height:18px; color:#4d4d4d; mso-line-height-rule:exactly;">Add them to Rate Connect and reach more travellers across trivago.</p>
+          </div>
+        </div>
+        <!--[if mso]></td><td width="136" valign="middle" align="right"><![endif]-->
+        <div class="banner-col banner-btn" style="display:inline-block; width:136px; vertical-align:middle; text-align:left; padding:6px 0 6px 0;"><!-- symmetric padding: no effect on desktop centring, adds a gap if the columns wrap -->
+{{BUTTON_ADD}}
+        </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+      </td>
+    </tr>
+{{IF_SINGLE_END}}
+
+    <!-- ============ SUPPORT SIGNATURE (Figma: Footer › SupportSignature) ============ -->
+    <tr>
+      <td class="sig" align="center" style="background-color:#ffffff; padding:24px 20px 24px 20px;">
+        <!-- Figma: 372px, sized exactly to SF Pro. Widened to 420px so the two links still fit on one
+             line with wider fallback fonts (Segoe UI, Roboto).
+             width attr = Outlook; style = everyone else (max-width on a fixed-width table is ignored by many clients) -->
+        <table class="sig-table" role="presentation" width="420" cellpadding="0" cellspacing="0" border="0" style="width:100%; max-width:420px;">
+          <tr>
+            <td class="sig-avatar" width="67" valign="top" style="width:67px; padding:0 16px 0 0;">
+              <img src="{{IMG}}avatar-support.png" width="67" height="67" alt="" style="display:block; width:67px; height:67px; border:0;">
+            </td>
+            <td valign="top" style="font-family:{{FONT}}; font-size:13px; line-height:18px; font-weight:bold; color:#22262e; mso-line-height-rule:exactly;">
+              Need a hand?<br>
+              <a href="{{URL_SUPPORT}}" target="_blank" style="color:#0088d9; text-decoration:underline;">Reach out to our Hotelier Support team.</a>
+            </td>
+          </tr>
+          <tr>
+            <!-- Desktop: links line up under the text column (67 avatar + 16 gap = 83px).
+                 Mobile: full width under the avatar, as in the Figma.
+                 Each link is an inline-block so the pair wraps onto two lines on narrow
+                 screens even where media queries are unsupported; Outlook gets a ghost table. -->
+            <td class="sig-links" colspan="2" style="padding:16px 0 0 83px; font-size:0; line-height:0;">
+              <!--[if mso]><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td valign="middle" style="padding-right:18px;"><![endif]-->
+                <div class="sig-link-item" style="display:inline-block; vertical-align:middle; padding:2px 18px 2px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle" width="15" style="width:15px;">
+                        <a href="{{URL_STUDIO}}" target="_blank"><img src="{{IMG}}icon-trivago.png" width="15" height="14" alt="" style="display:block; width:15px; height:14px; border:0;"></a>
+                      </td>
+                      <td class="sig-link-text" valign="middle" style="padding:0 0 0 8px; white-space:nowrap; font-family:{{FONT}}; font-size:12px; line-height:14px; color:#8d8d8b; mso-line-height-rule:exactly;">
+                        <a href="{{URL_STUDIO}}" target="_blank" style="color:#8d8d8b; text-decoration:none;">trivago Business Studio</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              <!--[if mso]></td><td valign="middle"><![endif]-->
+                <div class="sig-link-item" style="display:inline-block; vertical-align:middle; padding:2px 0px 2px 0;">
+                  <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td valign="middle" width="15" style="width:15px;">
+                        <a href="{{URL_LINKEDIN}}" target="_blank"><img src="{{IMG}}icon-linkedin.png" width="15" height="15" alt="" style="display:block; width:15px; height:15px; border:0;"></a>
+                      </td>
+                      <td class="sig-link-text" valign="middle" style="padding:0 0 0 8px; white-space:nowrap; font-family:{{FONT}}; font-size:12px; line-height:14px; color:#8d8d8b; mso-line-height-rule:exactly;">
+                        <a href="{{URL_LINKEDIN}}" target="_blank" style="color:#8d8d8b; text-decoration:none;">Follow us on LinkedIn</a>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              <!--[if mso]></td></tr></table><![endif]-->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- ============ LEGAL FOOTER (Figma: Footer › Block/Footer) ============ -->
+    <tr>
+      <td class="footer" align="center" style="background-color:#0a1121; padding:28px 40px 28px 40px;">
+        <img src="{{IMG}}logo-trivago-white.png" width="103" height="29" alt="trivago" style="display:block; width:103px; height:29px; border:0; margin:0 auto; color:#ffffff; font-family:{{FONT}}; font-size:16px; font-weight:bold;">
+        <p style="margin:16px 0 0 0; font-family:{{FONT}}; font-size:11px; line-height:16px; color:#ffffff; text-align:center; mso-line-height-rule:exactly;">
+          You've received this email because your property is registered on trivago Business&nbsp;Studio.<br>
+          trivago N.V., Kesselstra&szlig;e 5&ndash;7, 40221, D&uuml;sseldorf, Germany<br>
+          Registration Office: Dutch Chamber of Commerce; Registration Number: 67222927<br>
+          Copyright 2026 trivago | All rights reserved.
+        </p>
+        <p style="margin:16px 0 0 0; font-family:{{FONT}}; font-size:11px; line-height:13px; color:#bde7ff; text-align:center; mso-line-height-rule:exactly;">
+          <a href="{{URL_PREFERENCES}}" target="_blank" style="color:#bde7ff; text-decoration:none;">Update preferences</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="{{URL_UNSUBSCRIBE}}" target="_blank" style="color:#bde7ff; text-decoration:none;">Unsubscribe</a>
+        </p>
+      </td>
+    </tr>
+
+  </table>
+  <!--[if mso]></td></tr></table><![endif]-->
+
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
